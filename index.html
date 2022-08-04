@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üye Kayıt Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>MK CODERS PROGRAMMING INSTALLATION AND SALES AGREEMENT</h1>
+        <form action="result.html">
+            <div class="fieldset_pinfo">
+                <fieldset>
+                    <legend>Kişisel Bilgiler</legend>
+                    <table>
+                        <tr>
+                            <td> <label for="security">Form Güvenlik ID</label></td>
+                            <td><input type="text" name="security" id="name" placeholder="00032154" disabled></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ad">Ad</label></td>
+                            <td><input type="text" name="Adiniz" id="ad" placeholder="Adınızı giriniz" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="soyad">Soyad</label>
+                            </td>
+                            <td>
+                                <input type="text" name="Soy_Adiniz" id="soyad" placeholder="Soyadınızı giriniz"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="yas">Yaş</label>
+                            </td>
+                            <td>
+                                <input type="number" name="Yasiniz" id="yas" min="20" placeholder="Yaşınızı giriniz" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mail">Mail Adresi</label>
+                            </td>
+                            <td>
+                                <input type="email" name="Mailiniz" id="mail" placeholder="Mailinizi giriniz" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="picture">Fotoğraf Ekle</label>
+                            </td>
+                            <td>
+                                <input type="file" name="Resminiz" id="picture" required>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+            <div class="other_infos">
+                <fieldset>
+                    <legend>Diğer Bilgiler</legend>
+                    <table>
+                        <caption>Buradaki alanlar mesleki deneyimi kapsar.</caption>
+            </div>
+            <tr>
+                <td>
+                    <label for="start_date">Sektöre Giriş Tarihi</label>
+                </td>
+                <td>
+                    <input type="date" name="Giris_Tarihiniz" id="start_date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sektor">Sektör Deneyimi</label>
+                </td>
+                <td>
+                    <ol class="sektor_list">
+                        <li>
+                            <input type="radio" name="Sektor_Deneyimi" id="sektor" value="1-5 Yıl">1-5 Yıl
+                        </li>
+                        <li>
+                            <input type="radio" name="Sektor_Deneyimi" id="sektor" value="6-10 Yıl">6-10 Yıl
+                        </li>
+                        <li>
+                            <input type="radio" name="Sektor_Deneyimi" id="sektor" value="11-15 Yıl">11-15 Yıl</li>
+                        <li>
+                            <input type="radio" name="Sektor_Deneyimi" id="sektor" value="15 ve Üzeri">15 ve Üzeri
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="planguage">Proglamlama Dilleri
+                    </label>
+                </td>
+                <td>
+                    <select name="Proglama_Diliniz" id="planguage" size="5" multiple>
+                        <option value="C#">C#</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Java">Java</option>
+                        <option value="Java Script">Java Script</option>
+                        <option value="Phyton">Phyton</option>
+                    </select>
+                </td>
+            </tr>
+            </table>
+            </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend>
+            <textarea name="Sozlesme_Metni" id="sozlesme_metni">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem error minima, laboriosam, tempore quibusdam eaque magni magnam vero enim provident eius excepturi, facilis fugiat cumque. Officiis expedita eius aliquid fugit.
+                </textarea>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Mail Listesi</legend>
+            <table>
+                <tr>
+                    <td><label for="mail_katil">Mail listesine katılmak <span>istiyorum.</span></label></td>
+                    <td><input type="radio" name="Mail_listesi_katilim" id="mail_katil" value="Katılmak İstiyorum"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail_red">Mail listesine katılmak <span>istemiyorum.</span></label></td>
+                    <td><input type="radio" name="Mail_listesi_katilim" id="mail_red" value="Katılmıyorum"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <div class="footer_sozlesmeonay">
+        <fieldset>
+            <table>
+                <tr>
+                    <td><input type="checkbox" name="Sozlesme_Onay" id="sonay" value="Onaylıyorum" required></td>
+                    <td><label for="sonay">Yukarıdaki bilgilerin doğruluğunu kabul ediyor ve sözleşmeyi
+                            onaylıyorum.</label></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <div class="footer_saveform">
+        <input type="submit" value="Formu Kaydet">
+        <input type="reset" value="Formu Temizle">
+    </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>

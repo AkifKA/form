@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+.fieldset_pinfo td{
+    width: 150px;
+}
+
+.sektor_list{
+    padding: 0;
+}
+.table_sektor{
+    border: 2px solid blue;
+}
+.other_infos caption{
+    padding: 3px;
+    font-weight: bold;
+}
+.other_infos table{
+    width: 400px;
+}
+li{
+    list-style-type:none;
+    }
+#sozlesme_metni{
+    text-align: left;
+    width: 350px; 
+    height: 100px;
+    resize: none;
+}
+span{
+    font-weight: bold;
+}
+.footer_sozlesmeonay{
+    margin: 8px auto;
+}
+.footer_saveform{
+    margin: 8px auto;
+    text-align: right;
+}
